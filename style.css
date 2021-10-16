@@ -1,0 +1,59 @@
+body {
+    background-color: #37da60;
+    padding: 1em;
+    margin: 10px 50px 20px;
+}
+
+.whole-form {
+    width: 100%;
+}
+
+.forMonth {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.forYear {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.forPlacements {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.forvideoShowing {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.forHours {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.forRV {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.forBS {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.forComments {
+    padding: auto;
+    margin-top: 15px;
+}
+
+.lblComment {
+    margin-top: 0%;
+    margin-bottom: 80%;
+}
+
+.forSend {
+    padding: auto;
+    margin-top: 15px;
+}
