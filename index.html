@@ -6,84 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Slip (S-4)</title>
+    <!--
     <link rel="stylesheet" href="style.css">
+    -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
 
 <body>
-    <div class="whole-form">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <div class="container-xxl my-md-4 bd-layout bg-success text-white">
         <form
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfflldpC9urm4Qk5PMOVr4mbvqeMIcel6kfRhA4pUrCQDr6pQ/formResponse"
             target="_self" method="POST">
-
-            
-            <div class="forName">
+            <div class="mb-3">
                 <h2>RAGOBROB CONGREGATION</h2>
                 <h3>ONLINE REPORT SLIP</h3>
                 <label for="firstname">Name</label>
-                <input type="text" name="entry.1487552660" id="firstname" placeholder="First name" required>
+                <div class="input-group">
+                    <span for="firstname" class="input-group-text">First and last name</span>
+                    <input class="form-control form-control-lg" type="text" name="entry.1487552660" id="firstname"
+                        placeholder="First name" aria-label=".form-control-lg example" required />
 
-                <input type="text" name="entry.1570485814" id="lastname" placeholder="Last name" required>
+                    <input class="form-control form-control-lg" type="text" name="entry.1570485814" id="lastname"
+                        placeholder="Last name" aria-label=".form-control-lg example" required />
+                </div>
             </div>
-            <div class="forMonth">
+            <div class="mb-3">
                 <label for="month">Month</label>
-                <select name="entry.1502441076" id="month" required>
-                    <option value=""></option>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                </select>
+                <div class="input-group">
+                    <span for="month" class="input-group-text">Month</span>
+                    <select class="form-control form-control-lg" name="entry.1502441076" id="month"
+                        placeholder="Select a month here." required>
+                        <option value=""></option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    <span for="year" class="input-group-text">Year</span>
+                    <select class="form-control form-control-lg" name="entry.350981261" id="year"
+                        aria-label=".form-control-lg example" required>
+                        <option value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
             </div>
-            <div class="forYear">
-                <label for="year">Year</label>
-                <select name="entry.350981261" id="year" required>
-                    <option value=""></option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                </select>
+            <div class="mb-3">
+                <!-- <label for="year">Year</label> -->
             </div>
-            <div class="forPlacements">
+            <div class="mb-3">
                 <label for="placements">Placements</label>
-                <input type="text" name="entry.26876044" id="placements">
+                <input class="form-control form-control-lg" type="text" name="entry.26876044" id="placements"
+                    aria-label=".form-control-lg example" />
             </div>
-            <div class="forvideoShowing">
+            <div class="mb-3">
                 <label for="videoShowing">Video Showings</label>
-                <input type="text" name="entry.454258049" id="videoShowing">
+                <input class="form-control form-control-lg" type="text" name="entry.454258049" id="videoShowing"
+                    aria-label=".form-control-lg example" />
             </div>
-            <div class="forHours">
+            <div class="mb-3">
                 <label for="hours">Hours</label>
-                <input type="text" name="entry.41332611" id="hours" required>
+                <input class="form-control form-control-lg" type="text" name="entry.41332611" id="hours"
+                    aria-label=".form-control-lg example" required />
             </div>
-            <div class="forRV">
+            <div class="mb-3">
                 <label for="rv">Return Visits</label>
-                <input type="text" name="entry.556191526" id="rv">
+                <input class="form-control form-control-lg" type="text" name="entry.556191526" id="rv"
+                    aria-label=".form-control-lg example" />
             </div>
-            <div class="forBS">
+            <div class="mb-3">
                 <label for="bs">Bible Studies</label>
-                <input type="text" name="entry.293321354" id="bs">
+                <input class="form-control form-control-lg" type="text" name="entry.293321354" id="bs"
+                    aria-label=".form-control-lg example" />
             </div>
-            <div class="forComments">
-                <label class="lblComment" for="comments">Comments</label>
-                <textarea name="entry.1117849806" id="comments" cols="30" rows="2"></textarea>
+            <div class="mb-3">
+                <label for="comments">Comments</label>
+                <textarea class="form-control" placeholder="Comments" name="entry.1117849806" id="comments"
+                    style="height: 100px"></textarea>
+                
+
+                <!-- <textarea class="form-control form-control-lg" name="entry.1117849806" id="comments" cols="30" rows="2"></textarea aria-label=".form-control-lg example"> -->
             </div>
             <div class="forSend">
-                <button type="submit">SEND</button>
+                <button type="submit" class="btn btn-primary">SEND</button>
             </div>
-
         </form>
     </div>
-
-
-
 </body>
 
 </html>
