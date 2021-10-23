@@ -4,109 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Slip (S-4)</title>
-    <!--
-    <link rel="stylesheet" href="style.css">
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Field Service Report</title>
+
+
+
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-
-    <div class="container-xxl my-md-4 bd-layout bg-success text-white">
-        <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfflldpC9urm4Qk5PMOVr4mbvqeMIcel6kfRhA4pUrCQDr6pQ/formResponse"
-            target="_self" method="POST">
-            <div class="mb-3">
-                <h2>RAGOBROB CONGREGATION</h2>
-                <h3>ONLINE REPORT SLIP</h3>
-                <label for="firstname">Name</label>
-                <div class="input-group">
-                    <span for="firstname" class="input-group-text">Name</span>
-                    <input class="form-control form-control-lg" type="text" name="entry.1487552660" id="firstname"
-                        placeholder="First name" aria-label=".form-control-lg example" required />
-
-                    <input class="form-control form-control-lg" type="text" name="entry.1570485814" id="lastname"
-                        placeholder="Last name" aria-label=".form-control-lg example" required />
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="month">Month</label>
-                <div class="input-group">
-                    <span for="month" class="input-group-text">Month</span>
-                    <select class="form-control form-control-lg" name="entry.1502441076" id="month"
-                        placeholder="Select a month here." required>
-                        <option value=""></option>
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                        <option value="October">October</option>
-                        <option value="November">November</option>
-                        <option value="December">December</option>
-                    </select>
-                    <span for="year" class="input-group-text">Year</span>
-                    <select class="form-control form-control-lg" name="entry.350981261" id="year"
-                        aria-label=".form-control-lg example" required>
-                        <option value=""></option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                    </select>
-                </div>
-            </div>
-            <div class="mb-3">
-                <!-- <label for="year">Year</label> -->
-            </div>
-            <div class="mb-3">
-                <label for="placements">Placements</label>
-                <input class="form-control form-control-lg" type="number" name="entry.26876044" id="placements"
-                    aria-label=".form-control-lg example" />
-            </div>
-            <div class="mb-3">
-                <label for="videoShowing">Video Showings</label>
-                <input class="form-control form-control-lg" type="number" name="entry.454258049" id="videoShowing"
-                    aria-label=".form-control-lg example" />
-            </div>
-            <div class="mb-3">
-                <label for="hours">Hours</label>
-                <input class="form-control form-control-lg" type="number" name="entry.41332611" id="hours"
-                    aria-label=".form-control-lg example" required />
-            </div>
-            <div class="mb-3">
-                <label for="rv">Return Visits</label>
-                <input class="form-control form-control-lg" type="number" name="entry.556191526" id="rv"
-                    aria-label=".form-control-lg example" />
-            </div>
-            <div class="mb-3">
-                <label for="bs">Bible Studies</label>
-                <input class="form-control form-control-lg" type="number" name="entry.293321354" id="bs"
-                    aria-label=".form-control-lg example" />
-            </div>
-            <div class="mb-3">
-                <label for="comments">Comments</label>
-                <textarea class="form-control" placeholder="Comments" name="entry.1117849806" id="comments"
-                    style="height: 100px"></textarea>
-                
-
-                <!-- <textarea class="form-control form-control-lg" name="entry.1117849806" id="comments" cols="30" rows="2"></textarea aria-label=".form-control-lg example"> -->
-            </div>
-            <div class="forSend">
-                <button type="submit" class="btn btn-primary btn-xxl">SEND</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="jumbotron text-center bg-info">
+            <h1><em><strong>RAGOBROB CONGREGATION</strong></em></h1>
+            <h3>ONLINE REPORT SLIP</h3>
+        </div>
     </div>
+
+    </div>
+    <div class="container">
+
+        <div class="jumbotron bg-info">
+
+            <form
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfflldpC9urm4Qk5PMOVr4mbvqeMIcel6kfRhA4pUrCQDr6pQ/formResponse"
+                target="_self" method="POST">
+                <div class="mb-3">
+
+                    <label for="firstname"><strong>Name</strong></label>
+                    <div class="input-group">
+                        <span for="firstname" class="input-group-text">Name</span>
+                        <input class="form-control form-control-lg" type="text" name="entry.1487552660" id="firstname"
+                            placeholder="First name" aria-label=".form-control-lg example" required />
+
+                        <input class="form-control form-control-lg" type="text" name="entry.1570485814" id="lastname"
+                            placeholder="Last name" aria-label=".form-control-lg example" required />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="month"><strong>Month</strong></label>
+                    <div class="input-group">
+                        <span for="month" class="input-group-text"><strong>Month</strong></span>
+                        <select class="form-control form-control-lg" name="entry.1502441076" id="month"
+                            placeholder="Select a month here." required>
+                            <option value=""></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <span for="year" class="input-group-text"><strong>Year</strong></span>
+                        <select class="form-control form-control-lg" name="entry.350981261" id="year"
+                            aria-label=".form-control-lg example" required>
+                            <option value=""></option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="year">Year</label> -->
+                </div>
+                <div class="form-group">
+                    <label for="placements"><strong>Placements</strong></label>
+                    <input class="form-control form-control-lg" placeholder="Placements (Printed and Electronic" type="number" name="entry.26876044" id="placements"
+                        aria-label=".form-control-lg example" />
+                </div>
+                <div class="form-group">
+                    <label for="videoShowing"><strong>Video Showings</strong></label>
+                    <input class="form-control form-control-lg" placeholder="Video Showings" type="number" name="entry.454258049" id="videoShowing"
+                        aria-label=".form-control-lg example" />
+                </div>
+                <div class="form-group">
+                    <label for="hours"><strong>Hours</strong></label>
+                    <input class="form-control form-control-lg" placeholder="Hours" type="number" name="entry.41332611" id="hours"
+                        aria-label=".form-control-lg example" required />
+                </div>
+                <div class="form-group">
+                    <label for="rv"><strong>Return Visits</strong></label>
+                    <input class="form-control form-control-lg" placeholder="Return Visits" type="number" name="entry.556191526" id="rv"
+                        aria-label=".form-control-lg example" />
+                </div>
+                <div class="form-group">
+                    <label for="bs"><strong>Bible Studies</strong></label>
+                    <input class="form-control form-control-lg" placeholder="Number of Different Bible Studies Conducted" type="number" name="entry.293321354" id="bs"
+                        aria-label=".form-control-lg example" />
+                </div>
+                <div class="form-group">
+                    <label for="comments"><strong>Comments</strong></label>
+                    <textarea class="form-control" placeholder="Comments" name="entry.1117849806" id="comments"
+                        style="height: 100px"></textarea>
+
+
+                    <!-- <textarea class="form-control form-control-lg" name="entry.1117849806" id="comments" cols="30" rows="2"></textarea aria-label=".form-control-lg example"> -->
+                </div>
+                <div class="mb-3">
+                    <span class="d-inline-block tabindex=" 0" data-toggle="tooltip" title="Send to Jeyyar Boko">
+
+                        <button class="btn btn-success btn-lg btn-inline border border-dark"
+                            style="pointer-events: none;" type="button"><strong>Send to Jeyyar Boko</strong></button>
+
+                    </span>
+
+                </div>
+                <div class="mb-3">
+
+                </div>
+            </form>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
